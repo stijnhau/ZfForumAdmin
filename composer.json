@@ -5,10 +5,7 @@
     "zendframework/zendframework" : "2.*",
     "zf-commons/zfc-base" : "0.*",
     "zf-commons/zfc-user" : "1.*",
-    "stijnhau/zf2-forum-admin" : "dev-master"
-  },
-  "suggest": {
-    "stijnhau/zf2-forum-admin": "Admin module for stijnhau/zf2-forum"
+    "stijnhau/zf2-forum" : "dev-master"
   },
   "authors" : [ {
     "name" : "Stijn Haulotte",
