@@ -1,0 +1,27 @@
+{
+  "name" : "stijnhau/zf2-forum-admin",
+  "require" : {
+    "php" : ">=5.3",
+    "zendframework/zendframework" : "2.*",
+    "zf-commons/zfc-base" : "0.*",
+    "zf-commons/zfc-user" : "1.*",
+    "stijnhau/zf2-forum-admin" : "dev-master"
+  },
+  "suggest": {
+    "stijnhau/zf2-forum-admin": "Admin module for stijnhau/zf2-forum"
+  },
+  "authors" : [ {
+    "name" : "Stijn Haulotte",
+    "email" : "stijnhau@gmail.com",
+    "homepage" : "http://www.stijnhau.be/"
+  } ],
+  "keywords" : [ "zf2" ],
+  "autoload" : {
+    "psr-0" : {
+      "Zf2ForumAdmin" : "src/"
+    },
+    "classmap" : [ "./Module.php" ]
+  },
+  "type" : "library",
+  "homepage" : "https://github.com/stijnhau/Zf2ForumAdmin"
+}
