@@ -4,7 +4,7 @@
     "php" : ">=5.3",
     "zendframework/zendframework" : "2.*",
     "zf-commons/zfc-base" : "0.*",
-    "zf-commons/zfc-user" : "1.*",
+    "zf-commons/zfc-admin" : "0.2.*",
     "stijnhau/zf2-forum" : "dev-master"
   },
   "authors" : [ {

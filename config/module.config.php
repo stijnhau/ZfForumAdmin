@@ -13,9 +13,19 @@ return array(
     'view_manager' => array('template_path_stack' => array(__DIR__ . '/../view')),
     'controllers' => array(
         'invokables' => array(
-            'Zf2ForumAdmin\Controller\Zf2ForumAdmin' => 'Zf2ForumAdmin\Controller\Zf2ForumAdmin'
+            'Zf2ForumAdmin' => 'Zf2ForumAdmin\Controller\Zf2ForumAdminController'
         ),
     ),
+    
+    'navigation' => array(
+        'admin' => array(
+            'zf2forumadmin' => array(
+                'label' => 'Forum',
+                'route' => 'zfcadmin/zf2forumadmin',
+            ),
+        ),
+    ),
+    
     'router' => array(
         'routes' => array(
             'zfcadmin' => array(
@@ -24,9 +34,9 @@ return array(
                         'type' => 'Literal',
                         'priority' => 1000,
                         'options' => array(
-                            'route' => '/forum[/]',
+                            'route' => '/forum',
                             'defaults' => array(
-                                'controller' => 'zf2forumadmin',
+                                'controller' => 'Zf2ForumAdmin',
                                 'action'     => 'index',
                             ),
                         ),
