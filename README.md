@@ -25,3 +25,9 @@ Admin module for Zf2Forum
 
 1. PHP >= 5.3.0
 2. stijnhau/zf2-forum = dev-master
+
+## Features
+1. Adding and editing categories.[TODO]
+2. Adding and editing of messages.[TODO]
+3. Moving topic to other categorie.[TODO]
+4. Remove Topic[Todo]
