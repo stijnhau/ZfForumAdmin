@@ -21,4 +21,13 @@ class Module
     {
         return include __DIR__ . '/config/module.config.php';
     }
+    
+    public function getServiceConfig()
+    {
+        return array(
+            'factories' => array(
+                'Zf2ForumAdminList_Navigation' => 'Zf2ForumAdmin\Navigation\Service\AdminNavigationFactory',
+            ),
+        );
+    }
 }

@@ -24,6 +24,12 @@ return array(
                 'route' => 'zfcadmin/zf2forumadmin',
             ),
         ),
+        'Zf2ForumAdminList' => array(
+            'zf2forumadmin' => array(
+                'label' => 'Forum',
+                'route' => 'zfcadmin/zf2forumadmin',
+            ),
+        ),
     ),
     
     'router' => array(
