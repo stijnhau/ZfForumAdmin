@@ -7,31 +7,24 @@ use Zend\View\Model\ViewModel;
 /**
  * Zf2ForumAdminController
  *
- * @author
- *
+ * @author      Stijn Haulotte
  * @version
  *
  */
 class Zf2ForumAdminController extends AbstractActionController
 {
-
-    /**
-     * The
-     * default
-     * action
-     * -
-     * show
-     * the
-     * home
-     * page
-     */
     public function indexAction()
     {
-        // TODO
-        // Auto-generated
-        // Zf2ForumAdminController::indexAction()
-        // default
-        // action
+        return new ViewModel();
+    }
+
+    public function categoryAction()
+    {
+        return new ViewModel();
+    }
+
+    public function addCategoryAction()
+    {
         return new ViewModel();
     }
 }

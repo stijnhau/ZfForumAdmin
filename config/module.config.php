@@ -9,14 +9,14 @@ return array(
             ),
         ),
     ),
-    
+
     'view_manager' => array('template_path_stack' => array(__DIR__ . '/../view')),
     'controllers' => array(
         'invokables' => array(
             'Zf2ForumAdmin' => 'Zf2ForumAdmin\Controller\Zf2ForumAdminController'
         ),
     ),
-    
+
     'navigation' => array(
         'admin' => array(
             'zf2forumadmin' => array(
@@ -31,7 +31,7 @@ return array(
             ),
         ),
     ),
-    
+
     'router' => array(
         'routes' => array(
             'zfcadmin' => array(
@@ -46,6 +46,34 @@ return array(
                                 'action'     => 'index',
                             ),
                         ),
+                        'child_routes'  => array(
+                            'category' => array(
+                                'type' => 'Literal',
+                                'priority' => 1000,
+                                'options' => array(
+                                    'route' => '/category',
+                                    'defaults' => array(
+                                        'controller' => 'Zf2ForumAdmin',
+                                        'action'     => 'category',
+                                    ),
+                                ),
+                                'child_routes'  => array(
+                                    'add' => array(
+                                        'type' => 'Literal',
+                                        'priority' => 1000,
+                                        'options' => array(
+                                            'route' => '/add',
+                                            'defaults' => array(
+                                                'controller' => 'Zf2ForumAdmin',
+                                                'action'     => 'addCategory',
+                                            ),
+                                        ),
+                                    ),
+                                ),
+                                'may_terminate' => true,
+                            ),
+                        ),
+                        'may_terminate' => true,
                     ),
                 ),
             ),
