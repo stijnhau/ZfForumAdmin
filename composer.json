@@ -7,6 +7,10 @@
     "zf-commons/zfc-admin" : "0.2.*",
     "stijnhau/zf2-forum" : "dev-master"
   },
+  "require-dev" : {
+    "phpunit/phpunit" : ">=3.7,<4",
+    "squizlabs/php_codesniffer" : "1.4.*"
+  },
   "authors" : [ {
     "name" : "Stijn Haulotte",
     "email" : "stijnhau@gmail.com",
