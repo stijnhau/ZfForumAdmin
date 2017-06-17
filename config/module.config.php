@@ -1,4 +1,8 @@
 <?php
+namespace Zf2ForumAdmin;
+
+use Zend\Router\Http\Literal;
+
 return array(
     'translator' => array(
         'translation_file_patterns' => array(
@@ -37,7 +41,7 @@ return array(
             'zfcadmin' => array(
                 'child_routes' => array(
                     'zf2forumadmin' => array(
-                        'type' => 'Literal',
+                        'type' => Literal::class,
                         'priority' => 1000,
                         'options' => array(
                             'route' => '/forum',
@@ -48,7 +52,7 @@ return array(
                         ),
                         'child_routes'  => array(
                             'category' => array(
-                                'type' => 'Literal',
+                                'type' => Literal::class,
                                 'priority' => 1000,
                                 'options' => array(
                                     'route' => '/category',
@@ -59,7 +63,7 @@ return array(
                                 ),
                                 'child_routes'  => array(
                                     'add' => array(
-                                        'type' => 'Literal',
+                                        'type' => Literal::class,
                                         'priority' => 1000,
                                         'options' => array(
                                             'route' => '/add',
